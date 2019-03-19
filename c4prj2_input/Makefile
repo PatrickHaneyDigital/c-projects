@@ -1,0 +1,5 @@
+testread: cards.c deck.c input.c future.c main.c
+	gcc -g -o testread cards.c deck.c input.c future.c main.c
+.PHONY: clean
+clean:
+	rm -f testread *.o *.c~ *.h~
